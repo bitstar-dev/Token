@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.6;
-//import "http://github.com/0xcert/ethereum-erc721/blob/master/src/contracts/tokens/nf-token-metadata.sol";
-//import "./nf-token.sol";
-//import "./erc721.sol";
+
 /**
  * @dev ERC-721 non-fungible token standard.
  * See https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md.
@@ -168,7 +166,7 @@ interface ERC721
     view
     returns (bool);
 }
-//import "./erc721-token-receiver.sol";
+
 /**
  * @dev ERC-721 interface for accepting safe transfers.
  * See https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md.
@@ -197,8 +195,7 @@ interface ERC721TokenReceiver
     external
     returns(bytes4);
 }
-//import "../utils/supports-interface.sol";
-//import "./erc165.sol";
+
 /**
  * @dev A standard for detecting smart contract interfaces. 
  * See: https://eips.ethereum.org/EIPS/eip-165.
@@ -251,7 +248,7 @@ contract SupportsInterface is
     return supportedInterfaces[_interfaceID];
   }
 }
-//import "../utils/address-utils.sol";
+
 /**
  * @notice Based on:
  * https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Address.sol
@@ -697,7 +694,7 @@ contract NFToken is
     delete idToApproval[_tokenId];
   }
 }
-//import "./erc721-metadata.sol";
+
 /**
  * @dev Optional metadata extension for ERC-721 non-fungible token standard.
  * See https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md.

@@ -145,7 +145,6 @@ contract BitStarToken is IERC20 {
 
     mapping (address => mapping (address => uint256)) private _allowances;
 
-    // NOTE Start of https://github.com/OpenZeppelin/openzeppelin-solidity/blob/v2.3.0/contracts/token/ERC20/ERC20Detailed.sol
     string private _name;
     string private _symbol;
     uint8 private _decimals;
@@ -189,7 +188,6 @@ contract BitStarToken is IERC20 {
     function decimals() public view returns (uint8) {
         return _decimals;
     }
-    // NOTE End of https://github.com/OpenZeppelin/openzeppelin-solidity/blob/v2.3.0/contracts/token/ERC20/ERC20Detailed.sol
 
     uint256 public _totalSupply;
 

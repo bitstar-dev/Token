@@ -1,10 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.2;
 
-//import "https://github.com/OpenZeppelin/openzeppelin-contracts/contracts/token/ERC1155/ERC1155.sol";
-
-//import "https://github.com/OpenZeppelin/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol";
-//import "https://github.com/OpenZeppelin/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol";
 /**
  * @dev Interface of the ERC165 standard, as defined in the
  * https://eips.ethereum.org/EIPS/eip-165[EIP].
@@ -145,8 +141,6 @@ interface IERC1155 is IERC165 {
     ) external;
 }
 
-
-//import "https://github.com/OpenZeppelin/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol";
 /**
  * @dev _Available since v3.1._
  */
@@ -194,7 +188,6 @@ interface IERC1155Receiver is IERC165 {
     ) external returns (bytes4);
 }
 
-//import "https://github.com/OpenZeppelin/openzeppelin-contracts/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol";
 /**
  * @dev Interface of the optional ERC1155MetadataExtension interface, as defined
  * in the https://eips.ethereum.org/EIPS/eip-1155#metadata-extensions[EIP].
@@ -211,7 +204,6 @@ interface IERC1155MetadataURI is IERC1155 {
     function uri(uint256 id) external view returns (string memory);
 }
 
-//import "https://github.com/OpenZeppelin/openzeppelin-contracts/contracts/utils/Address.sol";
 /**
  * @dev Collection of functions related to the address type
  */
@@ -425,7 +417,6 @@ library Address {
     }
 }
 
-//import "https://github.com/OpenZeppelin/openzeppelin-contracts/contracts/utils/Context.sol";
 /**
  * @dev Provides information about the current execution context, including the
  * sender of the transaction and its data. While these are generally available
@@ -446,7 +437,6 @@ abstract contract Context {
     }
 }
 
-//import "https://github.com/OpenZeppelin/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol";
 /**
  * @dev Implementation of the {IERC165} interface.
  *
@@ -910,9 +900,6 @@ contract ERC1155 is Context, ERC165, IERC1155, IERC1155MetadataURI {
         return array;
     }
 }
-
-//import "https://github.com/OpenZeppelin/openzeppelin-contracts/contracts/access/Ownable.sol";
-
 
 /**
  * @dev Contract module which provides a basic access control mechanism, where
